@@ -10,15 +10,16 @@ html, body {
 }
 
 body {
+  height: 100vh;
   background-image: url('/images/bg-mobile.svg');
   background-color: hsl(257, 40%, 49%);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
 }
 
 main {
-  padding: 50px;
+  position: relative;
+  padding: 0 50px;
 }
 
 h1, button {
@@ -28,6 +29,7 @@ h1, button {
 
 button {
   background-color: #fff;
+  margin: 50px 0;
   padding: 10px 75px;
   font-size: 14px;
   color: hsl(257, 40%, 49%);
@@ -37,11 +39,10 @@ button {
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  margin: 10px;
+  margin: 0 5px;
 }
 
 ion-icon {
@@ -50,20 +51,29 @@ ion-icon {
   border-radius: 50%;
 }
 
+#left {
+  margin: 50px 0;
+}
+
 #left header img {
-  max-width: 50%;
+  max-width: 70%;
+}
+
+#left .product-image {
+  margin: 50px 0;
 }
 
 #left .product-image img {
-  max-width: 100%;
+  width: 100%;
 }
 
 #right {
+  margin: 50px 0;
   text-align: center;
   line-height: 1.7;
 }
 
-@media (min-width: 865px) {
+@media (min-width: 760px) {
 
   body {
     background-size: cover;
@@ -81,24 +91,45 @@ ion-icon {
 
   main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 100px;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 100px;
   }
 
   #left {
-    width: 60%;
+    width: 55%;
+  }
+
+  #left header img {
+    max-width: initial;
+  }
+
+  #left .product-image {
+    margin: calc(100vh * .05) 0;
   }
 
   #right {
-    width: 35%;
+    width: 40%;
     text-align: left;
   }
 
   h1 {
     font-size: 2.3rem;
     font-weight: 700;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
   }
 
 }
