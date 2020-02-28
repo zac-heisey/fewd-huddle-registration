@@ -19,7 +19,13 @@ body {
 
 main {
   position: relative;
+  height: 100vh;
+  max-height: 800px;
   padding: 0 50px;
+}
+
+header, footer {
+  margin: 20px 0;
 }
 
 h1, button {
@@ -51,16 +57,8 @@ ion-icon {
   border-radius: 50%;
 }
 
-#left {
-  margin: 50px 0;
-}
-
 #left header img {
   max-width: 70%;
-}
-
-#left .product-image {
-  margin: 50px 0;
 }
 
 #left .product-image img {
@@ -68,7 +66,6 @@ ion-icon {
 }
 
 #right {
-  margin: 50px 0;
   text-align: center;
   line-height: 1.7;
 }
@@ -110,10 +107,6 @@ ion-icon {
 
   #left header img {
     max-width: initial;
-  }
-
-  #left .product-image {
-    margin: calc(100vh * .05) 0;
   }
 
   #right {
