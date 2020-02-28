@@ -59,7 +59,7 @@ ion-icon {
 }
 
 #left .product-image img {
-  max-width: 100%;
+  width: 100%;
 }
 
 #right {
@@ -71,6 +71,14 @@ footer {
   margin: 50px 0 20px 0;
 }
 
+@media (min-width: 865px) {
+
+  body {
+    background-size: cover;
+  }
+
+}
+
 @media (min-width: 1000px) {
 
   body {
@@ -80,14 +88,16 @@ footer {
   }
 
   main {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
   }
 
   #left {
-    width: 65%;
+    width: 60%;
   }
 
   #right {
@@ -98,6 +108,12 @@ footer {
   h1 {
     font-size: 2.3rem;
     font-weight: 700;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
   }
 
 }
